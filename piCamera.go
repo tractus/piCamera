@@ -20,7 +20,7 @@ import (
 )
 
 //nolint: varcheck, unused
-var jpgMagic = []byte{0xff, 0xd8, 0xff, 0xe0, 0x00, 0x10, 0x4a, 0x46, 0x49, 0x46} //This is covered here https://asecuritysite.com/forensics/jpeg
+var jpgMagic = []byte{0xff, 0xd8, 0xff} //This is covered here https://asecuritysite.com/forensics/jpeg
 
 //PiCamera creates a way for code to be able to pull images from the camera live.
 //You must start eh raspivid explicitly first but once started, PiCamera will have the latest image available to view.
